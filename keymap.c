@@ -19,15 +19,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSHIFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_NO,
         KC_LCTRL, KC_LALT, KC_RCTRL, KC_RALT, KC_LGUI,
         KC_NO, KC_CAPSLOCK,
-        MO(1),
-        KC_SPACE, KC_ENTER, TG(2),
+        MO(FUNK),
+        KC_SPACE, KC_ENTER, TG(NUMC),
         // Right hand
         KC_NO, KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPACE,
         KC_UP, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSLASH,
         KC_H, KC_J, KC_K, KC_L, KC_SCOLON, KC_ENTER,
         KC_DOWN, KC_N, KC_M, KC_COMMA, KC_DOT, KC_SLASH, KC_RSHIFT,
         KC_LBRACKET, KC_RBRACKET, KC_MINUS, KC_EQUAL, KC_QUOTE,
-        KC_ESCAPE, TT(3),
+        KC_ESCAPE, TT(MOUS),
         KC_TAB,
         KC_SPACE, KC_LEFT, KC_RIGHT),
     // Keymap 1: Function key layer
