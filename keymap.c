@@ -7,8 +7,6 @@
 #define NUMC 2  // numpad
 #define MOUS 3  // mouse keys
 
-#define KC_TR KC_TRANSPARENT
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Keymap 0: Basic layer
     [BASE] = LAYOUT_ergodox(
@@ -33,63 +31,63 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Keymap 1: Function key layer
     [FUNK] = LAYOUT_ergodox(
         // Left hand
-        KC_TR, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_TR,
-        KC_TR, KC_F11, KC_F12, KC_F13, KC_F14, KC_F15, KC_TR,
-        KC_TR, KC_F21, KC_F22, KC_F23, KC_F24, KC_TR,
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR,
-        KC_TR,
-        KC_TR, KC_TR, KC_TR,
+        KC_TRNS, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_TRNS,
+        KC_TRNS, KC_F11, KC_F12, KC_F13, KC_F14, KC_F15, KC_TRNS,
+        KC_TRNS, KC_F21, KC_F22, KC_F23, KC_F24, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS,
+        KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS,
         // Right hand
-        KC_TR, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_TR,
-        KC_TR, KC_F16, KC_F17, KC_F18, KC_F19, KC_F20, KC_TR,
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR,
-        KC_TR,
-        KC_TR, KC_TR, KC_TR),
+        KC_TRNS, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_TRNS,
+        KC_TRNS, KC_F16, KC_F17, KC_F18, KC_F19, KC_F20, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS,
+        KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS),
     // Keymap 2: numkeys
     [NUMC] = LAYOUT_ergodox(
         // Left hand
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR,
-        KC_TR,
-        KC_TR, KC_TR, KC_TR,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS,
+        KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS,
         // Right hand
-        KC_TR, KC_TR, KC_TR, KC_NUM_LOCK, KC_KP_SLASH, KC_KP_ASTERISK, KC_BSPC,
-        KC_TR, KC_TR, KC_TR, KC_KP_7, KC_KP_8, KC_KP_9, KC_KP_MINUS,
-        KC_TR, KC_TR, KC_KP_4, KC_KP_5, KC_KP_6, KC_KP_PLUS,
-        KC_TR, KC_TR, KC_TR, KC_KP_1, KC_KP_2, KC_KP_3, KC_KP_ENTER,
-        KC_TR, KC_KP_0, KC_KP_DOT, KC_TR, KC_TR,
-        KC_TR, KC_TR,
-        KC_TR,
-        KC_TR, KC_TR, KC_TR),
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_NUM_LOCK, KC_KP_SLASH, KC_KP_ASTERISK, KC_BSPC,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_KP_7, KC_KP_8, KC_KP_9, KC_KP_MINUS,
+        KC_TRNS, KC_TRNS, KC_KP_4, KC_KP_5, KC_KP_6, KC_KP_PLUS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_KP_1, KC_KP_2, KC_KP_3, KC_KP_ENTER,
+        KC_TRNS, KC_KP_0, KC_KP_DOT, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS,
+        KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS),
     // Keymap 3: mouse keys
     [MOUS] = LAYOUT_ergodox(
         //Left hand
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_MS_WH_UP, KC_TR, KC_TR,
-        KC_TR, KC_TR, KC_TR, KC_MS_WH_LEFT, KC_MS_WH_DOWN, KC_MS_WH_RIGHT,
-        KC_TR, KC_TR, KC_TR, KC_MS_ACCEL0, KC_MS_ACCEL1, KC_MS_ACCEL2, KC_TR,
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR,
-        KC_TR,
-        KC_TR, KC_TR, KC_TR,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_MS_WH_UP, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_MS_WH_LEFT, KC_MS_WH_DOWN, KC_MS_WH_RIGHT,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_MS_ACCEL0, KC_MS_ACCEL1, KC_MS_ACCEL2, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS,
+        KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS,
         // Right hand
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_MS_BTN1, KC_MS_UP, KC_MS_BTN2, KC_TR, KC_TR, KC_TR,
-        KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR, KC_TR, KC_TR, KC_TR,
-        KC_TR, KC_TR,
-        KC_TR,
-        KC_TR, KC_TR, KC_TR),
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_MS_BTN1, KC_MS_UP, KC_MS_BTN2, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS,
+        KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS),
 };
 
 // Runs just one time when the keyboard initializes.
